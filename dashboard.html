@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | LabLens</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Lab<span>Lens</span></div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="explore.html">Explore Tests</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="report.html">Report Guide</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <div>
+                <span class="tag">LABLENS OVERVIEW</span>
+                <h1>Welcome to LabLens Dashboard</h1>
+                <p>Explore blood tests, understand medical terms and learn about laboratory reports.</p>
+            </div>
+            <div class="welcome-icon">✚</div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon">🧪</div>
+                <h3 id="testCount">6</h3>
+                <p>Blood Tests Available</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📖</div>
+                <h3 id="termCount">15</h3>
+                <p>Medical Terms Explained</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <h3>1</h3>
+                <p>Report Comparison Tool</p>
+            </div>
+
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="section">
+            <div class="section-title">
+                <h2>Quick Access</h2>
+                <p>Choose what you want to explore.</p>
+            </div>
+
+            <div class="action-grid">
+
+                <a href="explore.html" class="action-card">
+                    <div class="action-icon">🧪</div>
+                    <h3>Explore Blood Tests</h3>
+                    <p>Learn about common blood tests and their parameters.</p>
+                    <span>Explore Now →</span>
+                </a>
+
+                <a href="glossary.html" class="action-card">
+                    <div class="action-icon">📚</div>
+                    <h3>Medical Glossary</h3>
+                    <p>Understand difficult medical words in simple language.</p>
+                    <span>Learn More →</span>
+                </a>
+
+                <a href="report.html" class="action-card">
+                    <div class="action-icon">📋</div>
+                    <h3>Understand Reports</h3>
+                    <p>Compare a test value with a reference range.</p>
+                    <span>Check Results →</span>
+                </a>
+
+                <a href="index.html" class="action-card">
+                    <div class="action-icon">🏠</div>
+                    <h3>Homepage</h3>
+                    <p>Return to the main LabLens introduction.</p>
+                    <span>Visit Home →</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Popular Tests -->
+        <section class="section">
+            <div class="section-title">
+                <h2>Popular Blood Tests</h2>
+                <p>Start learning about these common tests.</p>
+            </div>
+
+            <div class="popular-list">
+
+                <a href="explore.html" class="popular-item">
+                    <div>
+                        <h3>Complete Blood Count (CBC)</h3>
+                        <p>Learn about different blood cells.</p>
+                    </div>
+                    <span>→</span>
+                </a>
+
+                <a href="explore.html" class="popular-item">
+                    <div>
+                        <h3>Hemoglobin Test</h3>
+                        <p>Understand the oxygen-carrying protein in blood.</p>
+                    </div>
+                    <span>→</span>
+                </a>
+
+                <a href="explore.html" class="popular-item">
+                    <div>
+                        <h3>Blood Glucose Test</h3>
+                        <p>Learn how blood sugar is measured.</p>
+                    </div>
+                    <span>→</span>
+                </a>
+
+                <a href="explore.html" class="popular-item">
+                    <div>
+                        <h3>Lipid Profile</h3>
+                        <p>Understand cholesterol measurements.</p>
+                    </div>
+                    <span>→</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="disclaimer">
+            <h3>Important Educational Notice</h3>
+            <p>
+                LabLens is an educational platform. It does not diagnose diseases
+                or replace professional medical advice. Always consult a qualified
+                healthcare professional about your laboratory results.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>LabLens</h2>
+        <p>Making laboratory reports easier to understand.</p>
+        <p>© 2026 LabLens | Educational Project</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

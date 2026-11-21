@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Understanding | LabLens</title>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Lab<span>Lens</span></div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore Tests</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="report.html" class="active">Report Guide</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tag">EDUCATIONAL REPORT GUIDE</span>
+            <h1>Understand Your <span>Blood Report</span></h1>
+            <p>
+                Enter a blood-test result and compare it with a reference range.
+                Learn what common test results mean in simple language.
+            </p>
+        </div>
+    </section>
+
+    <!-- Report Calculator -->
+    <main class="container">
+
+        <section class="report-card">
+            <div class="section-heading">
+                <h2>Check Your Test Result</h2>
+                <p>Enter your report details below.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="testSelect">Select Blood Test</label>
+                <select id="testSelect">
+                    <option value="wbc">White Blood Cell (WBC)</option>
+                    <option value="platelets">Platelet Count</option>
+                    <option value="glucose">Fasting Blood Glucose</option>
+                    <option value="hemoglobin">Hemoglobin</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="resultValue">Your Test Result</label>
+                <div class="input-with-unit">
+                    <input type="number" id="resultValue"
+                        placeholder="Enter your result" step="any">
+                    <span id="unit">thousand/µL</span>
+                </div>
+            </div>
+
+            <div class="range-heading">
+                <h3>Reference Range</h3>
+                <p>You can edit these values to match your lab report.</p>
+            </div>
+
+            <div class="range-inputs">
+                <div class="form-group">
+                    <label for="minRange">Minimum Value</label>
+                    <input type="number" id="minRange" step="any">
+                </div>
+
+                <div class="form-group">
+                    <label for="maxRange">Maximum Value</label>
+                    <input type="number" id="maxRange" step="any">
+                </div>
+            </div>
+
+            <button class="check-btn" onclick="checkResult()">
+                Check My Result
+            </button>
+
+            <button class="reset-btn" onclick="resetForm()">
+                Reset Form
+            </button>
+
+            <!-- Result Display -->
+            <div id="resultBox" aria-live="polite"></div>
+        </section>
+
+        <!-- How it works -->
+        <section class="info-section">
+            <h2>How Does It Work?</h2>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">01</div>
+                    <h3>Select a Test</h3>
+                    <p>Choose the blood parameter you want to understand.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">02</div>
+                    <h3>Enter Your Value</h3>
+                    <p>Enter the result shown in your laboratory report.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">03</div>
+                    <h3>Understand the Result</h3>
+                    <p>Compare the value with the reference range and read its explanation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Warning -->
+        <section class="warning-section">
+            <h3>Important Medical Disclaimer</h3>
+            <p>
+                LabLens is an educational project and does not provide medical
+                diagnoses or treatment recommendations. Reference ranges vary
+                between laboratories and can depend on age, sex, pregnancy,
+                medical history and testing conditions. Always use the reference
+                range printed on your own laboratory report and consult a
+                qualified healthcare professional for interpretation.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h2>LabLens</h2>
+        <p>Making laboratory reports easier to understand.</p>
+        <p class="copyright">© 2026 LabLens | Educational Project</p>
+    </footer>
+
+    <script src="report.js"></script>
+</body>
+</html>

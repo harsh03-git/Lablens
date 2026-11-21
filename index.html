@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabLens | Understand Your Blood Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Lab<span>Lens</span></div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="explore.html">Explore Tests</a></li>
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="report.html">Report Guide</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+            <a href="#tests" class="nav-btn">Explore Now</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="tagline">YOUR HEALTH, MADE SIMPLE</p>
+
+            <h1>Understand Your Blood Reports <span>With Confidence.</span></h1>
+
+            <p class="description">
+                Medical reports can be confusing. LabLens helps you
+                understand common blood test parameters, reference
+                ranges and medical terminology in simple language.
+            </p>
+
+            <!-- Search Box -->
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search a test e.g. Hemoglobin, CBC..."
+                >
+                <button onclick="searchTest()">Search</button>
+            </div>
+
+            <p class="search-hint">
+                Popular: CBC · Hemoglobin · Glucose · Cholesterol
+            </p>
+        </div>
+
+        <div class="hero-visual">
+            <div class="report-card">
+                <div class="report-icon">🩸</div>
+                <h3>Blood Report</h3>
+                <p>Your report, simplified.</p>
+
+                <div class="report-item">
+                    <span>Hemoglobin</span>
+                    <strong>13.5 g/dL</strong>
+                </div>
+
+                <div class="report-item">
+                    <span>WBC Count</span>
+                    <strong>7,500 /µL</strong>
+                </div>
+
+                <div class="report-item">
+                    <span>Platelets</span>
+                    <strong>2.5 lakh/µL</strong>
+                </div>
+
+                <div class="report-footer">
+                    Educational sample data only
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="feature">
+            <h3>🔍 Easy Search</h3>
+            <p>Find common blood tests quickly.</p>
+        </div>
+
+        <div class="feature">
+            <h3>📊 Reference Ranges</h3>
+            <p>Learn about commonly reported ranges.</p>
+        </div>
+
+        <div class="feature">
+            <h3>📖 Simple Explanations</h3>
+            <p>Understand complex medical terms.</p>
+        </div>
+    </section>
+
+    <!-- Popular Tests -->
+    <section class="tests-section" id="tests">
+
+        <div class="section-heading">
+            <p class="tagline">EXPLORE AND LEARN</p>
+            <h2>Popular Blood Tests</h2>
+            <p>Explore commonly performed laboratory tests.</p>
+        </div>
+
+        <div class="test-grid">
+
+            <div class="test-card">
+                <div class="test-icon">🩸</div>
+                <h3>Complete Blood Count</h3>
+                <p>Learn about red cells, white cells and platelets.</p>
+                <a href="#glossary">Explore Test →</a>
+            </div>
+
+            <div class="test-card">
+                <div class="test-icon">❤️</div>
+                <h3>Hemoglobin</h3>
+                <p>Understand the protein responsible for carrying oxygen.</p>
+                <a href="#glossary">Explore Test →</a>
+            </div>
+
+            <div class="test-card">
+                <div class="test-icon">🧪</div>
+                <h3>Blood Glucose</h3>
+                <p>Learn about blood sugar measurements.</p>
+                <a href="#glossary">Explore Test →</a>
+            </div>
+
+            <div class="test-card">
+                <div class="test-icon">💧</div>
+                <h3>Cholesterol</h3>
+                <p>Understand HDL, LDL and total cholesterol.</p>
+                <a href="#glossary">Explore Test →</a>
+            </div>
+
+            <div class="test-card">
+                <div class="test-icon">☀️</div>
+                <h3>Vitamin D</h3>
+                <p>Learn about vitamin D levels in the body.</p>
+                <a href="#glossary">Explore Test →</a>
+            </div>
+
+            <div class="test-card">
+                <div class="test-icon">⚡</div>
+                <h3>Thyroid Profile</h3>
+                <p>Understand T3, T4 and TSH measurements.</p>
+                <a href="#glossary">Explore Test →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how-section" id="how">
+        <div class="section-heading">
+            <p class="tagline">SIMPLE PROCESS</p>
+            <h2>How LabLens Works</h2>
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">01</div>
+                <h3>Search</h3>
+                <p>Search for the blood test or parameter you want to understand.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">02</div>
+                <h3>Understand</h3>
+                <p>Read simple explanations and learn about reference ranges.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">03</div>
+                <h3>Learn</h3>
+                <p>Explore medical terminology and educational information.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Glossary -->
+    <section class="glossary-section" id="glossary">
+        <p class="tagline">LEARN MEDICAL LANGUAGE</p>
+        <h2>Medical Terms Made Simple</h2>
+        <p>
+            Discover the meanings of common medical terms,
+            abbreviations and laboratory terminology.
+        </p>
+        <a href="#tests" class="primary-btn">Explore Medical Terms</a>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="disclaimer">
+        <h3>⚠️ Educational Information Only</h3>
+        <p>
+            LabLens is an educational platform designed to explain
+            common laboratory tests and medical terminology.
+            It does not diagnose diseases, provide treatment
+            recommendations or replace professional medical advice.
+            Always consult a qualified healthcare professional
+            for interpretation of your laboratory results.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">Lab<span>Lens</span></div>
+        <p>Making laboratory reports easier to understand.</p>
+        <p class="copyright">
+            © 2026 LabLens. Educational Project.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

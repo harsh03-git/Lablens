@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medical Glossary | LabLens</title>
+
+    <link rel="stylesheet" href="glossary.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Lab<span>Lens</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore Tests</a></li>
+                <li><a href="index.html#how">How It Works</a></li>
+                <li><a href="glossary.html" class="active">Glossary</a></li>
+            </ul>
+
+            <a href="explore.html" class="nav-btn">Explore Tests</a>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="glossary-hero">
+
+        <p class="tagline">MEDICAL LANGUAGE SIMPLIFIED</p>
+
+        <h1>Medical Terms, <span>Made Simple.</span></h1>
+
+        <p>
+            Confused by medical abbreviations in your blood report?
+            Search any term and understand its meaning in simple language.
+        </p>
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="glossarySearch"
+                placeholder="Search RBC, WBC, MCV, ESR..."
+                oninput="searchTerms()"
+            >
+
+            <button onclick="searchTerms()">Search</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Glossary Section -->
+    <section class="glossary-section">
+
+        <div class="section-heading">
+            <p class="tagline">LEARN AND UNDERSTAND</p>
+            <h2>Medical Terminology Guide</h2>
+            <p>Explore commonly used terms in laboratory reports.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filters">
+
+            <button class="filter-btn active" onclick="filterTerms('all', this)">
+                All Terms
+            </button>
+
+            <button class="filter-btn" onclick="filterTerms('blood', this)">
+                Blood Cells
+            </button>
+
+            <button class="filter-btn" onclick="filterTerms('indices', this)">
+                Blood Indices
+            </button>
+
+            <button class="filter-btn" onclick="filterTerms('other', this)">
+                Other Terms
+            </button>
+
+        </div>
+
+
+        <!-- Terms will appear here -->
+        <div class="glossary-grid" id="glossaryGrid"></div>
+
+        <p id="noResults">
+            No matching medical terms found. Try another search.
+        </p>
+
+    </section>
+
+
+    <!-- Important Note -->
+    <section class="medical-note">
+
+        <h3>⚠️ Educational Information</h3>
+
+        <p>
+            This glossary is designed to explain medical terminology
+            for educational purposes only. The meaning of a term
+            should always be understood in the context of the complete
+            laboratory report. It does not provide a diagnosis or
+            replace professional medical advice.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>Lab<span>Lens</span></h2>
+
+        <p>Making laboratory reports easier to understand.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore Tests</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="report.html">Report Guide</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 LabLens | Educational Project
+        </p>
+
+    </footer>
+
+
+    <script src="glossary.js"></script>
+
+</body>
+</html>

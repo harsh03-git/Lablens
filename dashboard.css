@@ -1,0 +1,293 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #243247;
+}
+
+/* Navbar */
+.navbar {
+    background: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #173554;
+}
+
+.logo span {
+    color: #16a6a0;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #526174;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #13a49d;
+}
+
+/* Main */
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 40px auto;
+}
+
+/* Welcome */
+.welcome {
+    background: linear-gradient(120deg, #142f50, #176d79);
+    color: white;
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag {
+    color: #76e1d7;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.welcome h1 {
+    font-size: 32px;
+    margin: 16px 0;
+}
+
+.welcome p {
+    color: #dbe9f1;
+    line-height: 1.6;
+}
+
+.welcome-icon {
+    font-size: 75px;
+    color: #65ded3;
+    padding: 15px;
+}
+
+/* Statistics */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 27px;
+    border-radius: 13px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+.stat-icon {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.stat-card h3 {
+    font-size: 30px;
+    color: #13a49d;
+    margin-bottom: 7px;
+}
+
+.stat-card p {
+    color: #718096;
+    font-size: 14px;
+}
+
+/* Sections */
+.section {
+    margin-top: 55px;
+}
+
+.section-title {
+    margin-bottom: 23px;
+}
+
+.section-title h2 {
+    color: #173554;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #718096;
+    font-size: 14px;
+}
+
+/* Action Cards */
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.action-card {
+    background: white;
+    padding: 28px;
+    border-radius: 13px;
+    text-decoration: none;
+    color: #243247;
+    border: 1px solid #edf1f6;
+    transition: 0.3s;
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+    border-color: #16a6a0;
+}
+
+.action-icon {
+    font-size: 32px;
+    margin-bottom: 17px;
+}
+
+.action-card h3 {
+    color: #173554;
+    margin-bottom: 10px;
+}
+
+.action-card p {
+    color: #718096;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 17px;
+}
+
+.action-card span {
+    color: #0d9992;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Popular Tests */
+.popular-list {
+    display: grid;
+    gap: 13px;
+}
+
+.popular-item {
+    background: white;
+    padding: 20px 24px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #243247;
+    transition: 0.2s;
+}
+
+.popular-item:hover {
+    background: #eaf8f6;
+}
+
+.popular-item h3 {
+    color: #173554;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.popular-item p {
+    color: #718096;
+    font-size: 13px;
+}
+
+.popular-item span {
+    color: #13a49d;
+    font-size: 25px;
+}
+
+/* Disclaimer */
+.disclaimer {
+    margin-top: 55px;
+    padding: 25px;
+    background: #fff8e8;
+    border-left: 5px solid #e5a83e;
+    border-radius: 8px;
+}
+
+.disclaimer h3 {
+    color: #875b14;
+    margin-bottom: 12px;
+}
+
+.disclaimer p {
+    color: #745a31;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    background: #112b49;
+    text-align: center;
+    padding: 35px 15px;
+    color: white;
+}
+
+footer h2 {
+    color: #58d9cc;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #d0dce8;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 750px) {
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .welcome h1 {
+        font-size: 25px;
+    }
+
+    .welcome-icon {
+        display: none;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+}

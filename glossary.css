@@ -1,0 +1,342 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #f8fbfd;
+    color: #183047;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+
+header {
+    background: white;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.04);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #183047;
+}
+
+.logo span,
+footer span {
+    color: #12a99a;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #536779;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #12a99a;
+}
+
+.nav-btn {
+    background: #12a99a;
+    color: white;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+}
+
+/* Hero */
+
+.glossary-hero {
+    background: #eaf8f6;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.tagline {
+    color: #12a99a;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.glossary-hero h1 {
+    font-size: 43px;
+    margin-bottom: 18px;
+}
+
+.glossary-hero h1 span {
+    color: #12a99a;
+}
+
+.glossary-hero > p:not(.tagline) {
+    max-width: 650px;
+    margin: auto;
+    color: #687b8d;
+    line-height: 1.7;
+}
+
+/* Search */
+
+.search-box {
+    display: flex;
+    max-width: 550px;
+    margin: 30px auto 0;
+    background: white;
+    padding: 7px;
+    border-radius: 9px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 13px;
+    font-size: 15px;
+}
+
+.search-box button {
+    background: #12a99a;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+/* Glossary */
+
+.glossary-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.section-heading p:last-child {
+    color: #8292a0;
+}
+
+/* Filters */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 11px 22px;
+    background: white;
+    border: 1px solid #dce7e9;
+    border-radius: 25px;
+    color: #536779;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #12a99a;
+    color: white;
+    border-color: #12a99a;
+}
+
+/* Cards */
+
+.glossary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.term-card {
+    background: white;
+    border: 1px solid #e9eff2;
+    border-radius: 13px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.term-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+}
+
+.term-code {
+    display: inline-block;
+    background: #eaf8f6;
+    color: #12a99a;
+    font-size: 17px;
+    font-weight: 800;
+    padding: 9px 14px;
+    border-radius: 7px;
+    margin-bottom: 18px;
+}
+
+.term-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.term-card p {
+    color: #687b8d;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.term-category {
+    display: inline-block;
+    color: #12a99a;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 17px;
+}
+
+#noResults {
+    display: none;
+    text-align: center;
+    color: #8292a0;
+    padding: 30px;
+}
+
+/* Medical Note */
+
+.medical-note {
+    max-width: 1100px;
+    margin: 0 auto 75px;
+    background: #fff8e9;
+    border-left: 5px solid #e9b64c;
+    padding: 28px;
+    border-radius: 8px;
+}
+
+.medical-note h3 {
+    color: #76571b;
+    margin-bottom: 12px;
+}
+
+.medical-note p {
+    color: #806d49;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* Footer */
+
+footer {
+    background: #183047;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #c0cbd3;
+    margin: 10px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 22px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+
+    .glossary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .glossary-hero h1 {
+        font-size: 32px;
+    }
+
+    .glossary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-box input {
+        font-size: 13px;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+}

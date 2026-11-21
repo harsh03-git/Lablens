@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Blood Tests | LabLens</title>
+
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Lab<span>Lens</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html" class="active">Explore Tests</a></li>
+                <li><a href="index.html#how">How It Works</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="report.html">Report Guide</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                 <li><a href="about.html">About</a></li>
+            </ul>
+
+            <a href="index.html" class="nav-btn">Back Home</a>
+        </nav>
+    </header>
+
+    <!-- Page Heading -->
+    <section class="page-heading">
+        <p class="tagline">KNOW YOUR TESTS</p>
+
+        <h1>Explore Blood Tests</h1>
+
+        <p>
+            Discover common blood tests, understand their parameters
+            and learn what the numbers in your reports mean.
+        </p>
+
+        <!-- Search -->
+        <div class="search-container">
+            <input
+                type="text"
+                id="testSearch"
+                placeholder="Search CBC, Hemoglobin, Glucose..."
+            >
+
+            <button onclick="searchTests()">Search</button>
+        </div>
+    </section>
+
+    <!-- Tests Section -->
+    <section class="tests-section">
+
+        <div class="section-title">
+            <h2>Available Blood Tests</h2>
+            <p>Select a test to explore its parameters.</p>
+        </div>
+
+        <div class="test-grid" id="testGrid">
+
+            <div class="test-card" data-name="cbc complete blood count">
+                <div class="test-icon">🩸</div>
+                <h3>Complete Blood Count</h3>
+                <p>Understand red blood cells, white blood cells and platelets.</p>
+                <button onclick="showTest('cbc')">View Details →</button>
+            </div>
+
+            <div class="test-card" data-name="hemoglobin hb">
+                <div class="test-icon">❤️</div>
+                <h3>Hemoglobin</h3>
+                <p>Learn about the oxygen-carrying protein in your blood.</p>
+                <button onclick="showTest('hemoglobin')">View Details →</button>
+            </div>
+
+            <div class="test-card" data-name="glucose blood sugar">
+                <div class="test-icon">🧪</div>
+                <h3>Blood Glucose</h3>
+                <p>Understand blood sugar measurements and their meaning.</p>
+                <button onclick="showTest('glucose')">View Details →</button>
+            </div>
+
+            <div class="test-card" data-name="lipid cholesterol">
+                <div class="test-icon">💧</div>
+                <h3>Lipid Profile</h3>
+                <p>Learn about HDL, LDL, triglycerides and cholesterol.</p>
+                <button onclick="showTest('lipid')">View Details →</button>
+            </div>
+
+            <div class="test-card" data-name="thyroid tsh t3 t4">
+                <div class="test-icon">⚡</div>
+                <h3>Thyroid Profile</h3>
+                <p>Understand TSH, T3 and T4 measurements.</p>
+                <button onclick="showTest('thyroid')">View Details →</button>
+            </div>
+
+            <div class="test-card" data-name="vitamin d">
+                <div class="test-icon">☀️</div>
+                <h3>Vitamin D</h3>
+                <p>Learn about vitamin D levels and their importance.</p>
+                <button onclick="showTest('vitamin')">View Details →</button>
+            </div>
+
+        </div>
+
+        <p id="noResults" class="no-results">
+            No matching tests found. Try another search.
+        </p>
+
+    </section>
+
+    <!-- Test Details -->
+    <section class="details-section" id="detailsSection">
+
+        <div class="details-header">
+            <div>
+                <p class="tagline">TEST INFORMATION</p>
+                <h2 id="testTitle">Complete Blood Count</h2>
+                <p id="testDescription"></p>
+            </div>
+
+            <button class="close-btn" onclick="closeDetails()">
+                ✕ Close
+            </button>
+        </div>
+
+        <h3 class="table-heading">Parameters and Reference Ranges</h3>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Reference Range</th>
+                        <th>Unit</th>
+                        <th>Meaning</th>
+                    </tr>
+                </thead>
+
+                <tbody id="parameterTable">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="educational-note">
+            <h3>⚠️ Important Information</h3>
+            <p>
+                Reference ranges shown here are general educational
+                examples for adults. They may vary by laboratory,
+                age, sex, pregnancy status and other factors.
+                Always refer to the range printed on your own
+                laboratory report and consult a qualified healthcare
+                professional for interpretation.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Lab<span>Lens</span></h2>
+        <p>Making laboratory reports easier to understand.</p>
+        <p class="copyright">
+            © 2026 LabLens | Educational Project
+        </p>
+    </footer>
+
+    <script src="explore.js"></script>
+
+</body>
+</html>
